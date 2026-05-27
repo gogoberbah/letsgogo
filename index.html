@@ -45,7 +45,15 @@
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
+                     <li class="nav-item nav-login-item">
+                        <p id="userInfo" class="user_info_text">Belum login</p>
+                        <div id="authArea">
+                           <button onclick="goLogin()" class="nav-login-btn">
+                              <i class="fa fa-sign-in"></i> Login
+                           </button>
+                        </div>
+                     </li>
+                  </ul>
 					</nav>
 
 				<!-- Main -->
@@ -224,6 +232,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="js/welcome.js"></script>
 
 	</body>
 </html>
