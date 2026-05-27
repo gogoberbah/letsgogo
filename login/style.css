@@ -66,3 +66,193 @@
     width:100%;
   }
 }
+/* =========================================================
+   LOGIN / REGISTER FUTSAL DELAYOTA
+========================================================= */
+
+.auth-wrapper{
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:2rem;
+	position:relative;
+	z-index:10;
+}
+
+.auth-container{
+	width:100%;
+	max-width:1100px;
+	display:flex;
+	border-radius:12px;
+	overflow:hidden;
+	background:rgba(255,255,255,0.96);
+	box-shadow:0 25px 60px rgba(0,30,60,0.35);
+	backdrop-filter:blur(8px);
+}
+
+/* LEFT SIDE */
+
+.auth-left{
+	flex:1;
+	padding:5rem;
+	background:
+		linear-gradient(
+			135deg,
+			rgba(0,119,182,0.92),
+			rgba(0,180,216,0.88)
+		),
+		url("../images/bg.jpg");
+	background-size:cover;
+	background-position:center;
+	color:#fff;
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.auth-left h1{
+	font-size:4rem;
+	line-height:1;
+	margin-bottom:1.5rem;
+	color:#fff;
+}
+
+.auth-left p{
+	font-size:1rem;
+	line-height:2;
+	color:rgba(255,255,255,0.9);
+	text-align:left;
+	max-width:480px;
+}
+
+/* RIGHT SIDE */
+
+.auth-box{
+	width:420px;
+	padding:4rem;
+	background:#fff;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.auth-box h2{
+	color:var(--biru-utama);
+	font-size:2rem;
+	margin-bottom:2rem;
+	text-align:center;
+}
+
+/* FORM */
+
+.auth-form{
+	display:flex;
+	flex-direction:column;
+	gap:1rem;
+}
+
+.auth-form input{
+	height:3.5rem;
+	padding:0 1rem;
+	border-radius:6px;
+	border:2px solid var(--biru-pucat);
+	font-size:1rem;
+	background:#fff;
+	transition:0.2s ease;
+}
+
+.auth-form input:focus{
+	border-color:var(--biru-muda);
+	box-shadow:0 0 0 4px rgba(0,180,216,0.12);
+}
+
+.auth-form button{
+	height:3.5rem;
+	border:none;
+	border-radius:6px;
+	cursor:pointer;
+
+	background:
+		linear-gradient(
+			135deg,
+			var(--biru-utama),
+			var(--biru-muda)
+		);
+
+	color:#fff !important;
+
+	font-family:"Source Sans Pro", Helvetica, sans-serif;
+	font-size:0.9rem;
+	font-weight:900;
+	letter-spacing:0.08em;
+	text-transform:uppercase;
+
+	transition:0.25s ease;
+}
+
+.auth-form button:hover{
+	transform:translateY(-2px);
+	box-shadow:0 12px 24px rgba(0,119,182,0.3);
+}
+
+/* BOTTOM TEXT */
+
+.auth-bottom{
+	margin-top:1.5rem;
+	text-align:center;
+	font-size:0.95rem;
+	color:var(--teks-abu);
+}
+
+.auth-bottom a{
+	color:var(--biru-utama);
+	border-bottom:none;
+	font-weight:700;
+}
+
+.auth-bottom a:hover{
+	color:var(--biru-muda) !important;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:980px){
+
+	.auth-container{
+		flex-direction:column;
+	}
+
+	.auth-left{
+		padding:3rem;
+	}
+
+	.auth-left h1{
+		font-size:3rem;
+	}
+
+	.auth-box{
+		width:100%;
+		padding:3rem 2rem;
+	}
+}
+
+@media screen and (max-width:736px){
+
+	.auth-wrapper{
+		padding:1rem;
+	}
+
+	.auth-left{
+		padding:2rem;
+	}
+
+	.auth-left h1{
+		font-size:2.3rem;
+	}
+
+	.auth-box h2{
+		font-size:1.5rem;
+	}
+}
